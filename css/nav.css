@@ -1,0 +1,71 @@
+nav {
+    background: salmon;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+
+#drawer-toggle {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+label[for="drawer-toggle"] {
+    position: absolute;
+    top:12px;
+    left: 12px;
+    z-index: 2;
+    width: 56px;
+    height: 56px;
+    padding: 2px 13px;
+    font-size: 32px;
+    background-color: salmon;
+    color: white;
+    border-radius: 50%;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+              0 3px 1px -2px rgba(0, 0, 0, 0.12),
+              0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+label[for="drawer-toggle"]:hover {
+    box-shadow: 0 0 8px rgba(0,0,0,.18),0 8px 16px rgba(0,0,0,.36);
+}
+
+
+#drawer-toggle:checked + label {
+    left: 215px;
+}
+
+#drawer-toggle:checked ~ main,
+#drawer-toggle:checked ~ footer {
+    left: 200px;
+}
+
+#drawer-toggle:not(:checked) ~ nav a {
+    display: none;
+}
+
+#drawer-toggle + label, main, footer{
+    transition: all 0.2s cubic-bezier(.25,.8,.25,1);
+}
+
+nav a {
+    display: block;
+    color: white;
+    padding: 10px 20px;
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+nav a:hover {
+    background-color: tomato;
+    color: white;
+}
