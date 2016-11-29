@@ -1,6 +1,6 @@
 window.onload = function() {
-    var title = document.querySelector('header > h1');
-    var subtitle = document.querySelector('header > h5');
+    var title = document.querySelector('#title');
+    var subtitle = document.querySelector('#subtitle');
     item = Math.floor(Math.random() * quotes.length);
     title.innerHTML = quotes[item][0];
     subtitle.innerHTML = quotes[item][1];
