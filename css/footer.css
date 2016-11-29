@@ -1,17 +1,15 @@
 footer {
-    position: relative;
-    top: 0;
-    left: 0;
     background-color: lightseagreen;
     z-index: 0;
-    width: 100% !important;
-    max-width: 100% !important;
-    padding: 50px 0 !important;
+    padding: 3rem 0 !important;
     color: white;
-}
 
-footer section {
+    justify-content: center;
     text-align: center;
+
+    margin-left: -2rem;
+    margin-right: -2rem;
+    margin-bottom: -2rem;
 }
 
 footer p, footer a{

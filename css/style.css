@@ -24,3 +24,7 @@ a {
     height: auto;
     width: auto;
 }
+
+.col {
+    margin-bottom: 2rem;
+}

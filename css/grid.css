@@ -1,0 +1,530 @@
+:root {
+    --gutter-width: 1rem;
+    --half-gutter-width: calc(var(--gutter-width) * 0.5);
+    --gutter-compensator: calc(var(--half-gutter-width) * -0.5);
+    --magin-width: 2rem;
+    --screen-s-min: 24em;
+    --screen-m-min: 44em;
+    --screen-l-min: 56em;
+    --container-s: calc(30 + var(--gutter-width));
+    --container-m: calc(56 + var(--gutter-width));
+    --container-l: calc(82 + var(--gutter-width));
+}
+
+/* Main is our container */
+main {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+main.fluid {
+    padding-right: var(--margin-width, 2rem);
+    padding-left: var(--margin-width, 2rem);
+}
+
+/* These are handled as rows */
+header, footer, section {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-right: var(--gutter-compensation, -0.5rem);
+  margin-left: var(--gutter-compensation, -0.5rem);
+}
+
+header.reverse, footer.reverse, section.reverse {
+    flex-direction: row-reverse;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.col {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    padding-right: var(--half-gutter-width, 0.5rem);
+    padding-left: var(--half-gutter-width, 0.5rem);
+}
+
+.s {
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 100%;
+}
+
+.s1 {
+    flex-basis: 8.33333333%;
+    max-width: 8.33333333%;
+}
+
+.s2 {
+    flex-basis: 16.66666667%;
+    max-width: 16.66666667%;
+}
+
+.s3 {
+    flex-basis: 25%;
+    max-width: 25%;
+}
+
+.s4 {
+    flex-basis: 33.33333333%;
+    max-width: 33.33333333%;
+}
+
+.s5 {
+    flex-basis: 41.66666667%;
+    max-width: 41.66666667%;
+}
+
+.s6 {
+    flex-basis: 50%;
+    max-width: 50%;
+}
+
+.s7 {
+    flex-basis: 58.33333333%;
+    max-width: 58.33333333%;
+}
+
+.s8 {
+    flex-basis: 66.66666667%;
+    max-width: 66.66666667%;
+}
+
+.s9 {
+    flex-basis: 75%;
+    max-width: 75%;
+}
+
+.s10 {
+    flex-basis: 83.33333333%;
+    max-width: 83.33333333%;
+}
+
+.s11 {
+    flex-basis: 91.66666667%;
+    max-width: 91.66666667%;
+}
+
+.s12 {
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+.s0-offset {
+    margin-left: 0;
+}
+
+.s1-offset {
+    margin-left: 8.33333333%;
+}
+
+.s2-offset {
+    margin-left: 16.66666667%;
+}
+
+.s3-offset {
+    margin-left: 25%;
+}
+
+.s4-offset {
+    margin-left: 33.33333333%;
+}
+
+.s5-offset {
+    margin-left: 41.66666667%;
+}
+
+.s6-offset {
+    margin-left: 50%;
+}
+
+.s7-offset {
+    margin-left: 58.33333333%;
+}
+
+.s8-offset {
+    margin-left: 66.66666667%;
+}
+
+.s9-offset {
+    margin-left: 75%;
+}
+
+.s10-offset {
+    margin-left: 83.33333333%;
+}
+
+.s11-offset {
+    margin-left: 91.66666667%;
+}
+
+.s-start {
+    justify-content: flex-start;
+    text-align: start;
+}
+
+.s-center {
+    justify-content: center;
+    text-align: center;
+}
+
+.s-end {
+    justify-content: flex-end;
+    text-align: end;
+}
+
+.s-top {
+    align-items: flex-start;
+}
+
+.s-middle {
+    align-items: center;
+}
+
+.s-bottom {
+    align-items: flex-end;
+}
+
+.s-around {
+    justify-content: space-around;
+}
+
+.s-between {
+    justify-content: space-between;
+}
+
+.s-first {
+    order: -1;
+}
+
+.s-last {
+    order: 1;
+}
+
+@media (min-width: 36em) {
+    main {
+        width: var(--container-m, 57rem);
+    }
+    .m {
+        flex-grow: 1;
+        flex-basis: 0;
+        max-width: 100%;
+    }
+
+    .m1 {
+        flex-basis: 8.33333333%;
+        max-width: 8.33333333%;
+    }
+
+    .m2 {
+        flex-basis: 16.66666667%;
+        max-width: 16.66666667%;
+    }
+
+    .m3 {
+        flex-basis: 25%;
+        max-width: 25%;
+    }
+
+    .m4 {
+        flex-basis: 33.33333333%;
+        max-width: 33.33333333%;
+    }
+
+    .m5 {
+        flex-basis: 41.66666667%;
+        max-width: 41.66666667%;
+    }
+
+    .m6 {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+
+    .m7 {
+        flex-basis: 58.33333333%;
+        max-width: 58.33333333%;
+    }
+
+    .m8 {
+        flex-basis: 66.66666667%;
+        max-width: 66.66666667%;
+    }
+
+    .m9 {
+        flex-basis: 75%;
+        max-width: 75%;
+    }
+
+    .m10 {
+        flex-basis: 83.33333333%;
+        max-width: 83.33333333%;
+    }
+
+    .m11 {
+        flex-basis: 91.66666667%;
+        max-width: 91.66666667%;
+    }
+
+    .m12 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    .m0-offset {
+        margin-left: 0;
+    }
+
+    .m1-offset {
+        margin-left: 8.33333333%;
+    }
+
+    .m2-offset {
+        margin-left: 16.66666667%;
+    }
+
+    .m3-offset {
+        margin-left: 25%;
+    }
+
+    .m4-offset {
+        margin-left: 33.33333333%;
+    }
+
+    .m5-offset {
+        margin-left: 41.66666667%;
+    }
+
+    .m6-offset {
+        margin-left: 50%;
+    }
+
+    .m7-offset {
+        margin-left: 58.33333333%;
+    }
+
+    .m8-offset {
+        margin-left: 66.66666667%;
+    }
+
+    .m9-offset {
+        margin-left: 75%;
+    }
+
+    .m10-offset {
+        margin-left: 83.33333333%;
+    }
+
+    .m11-offset {
+        margin-left: 91.66666667%;
+    }
+
+    .m-start {
+        justify-content: flex-start;
+        text-align: start;
+    }
+
+    .m-center {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .m-end {
+        justify-content: flex-end;
+        text-align: end;
+    }
+
+    .m-top {
+        align-items: flex-start;
+    }
+
+    .m-middle {
+        align-items: center;
+    }
+
+    .m-bottom {
+        align-items: flex-end;
+    }
+
+    .m-around {
+        justify-content: space-around;
+    }
+
+    .m-between {
+        justify-content: space-between;
+    }
+
+    .m-first {
+        order: -1;
+    }
+
+    .m-last {
+        order: 1;
+    }
+}
+
+@media (min-width: 56em) {
+    main {
+        width: var(--container-l, 83rem);
+    }
+    .l {
+        flex-grow: 1;
+        flex-basis: 0;
+        max-width: 100%;
+    }
+
+    .l1 {
+        flex-basis: 8.33333333%;
+        max-width: 8.33333333%;
+    }
+
+    .l2 {
+        flex-basis: 16.66666667%;
+        max-width: 16.66666667%;
+    }
+
+    .l3 {
+        flex-basis: 25%;
+        max-width: 25%;
+    }
+
+    .l4 {
+        flex-basis: 33.33333333%;
+        max-width: 33.33333333%;
+    }
+
+    .l5 {
+        flex-basis: 41.66666667%;
+        max-width: 41.66666667%;
+    }
+
+    .l6 {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+
+    .l7 {
+        flex-basis: 58.33333333%;
+        max-width: 58.33333333%;
+    }
+
+    .l8 {
+        flex-basis: 66.66666667%;
+        max-width: 66.66666667%;
+    }
+
+    .l9 {
+        flex-basis: 75%;
+        max-width: 75%;
+    }
+
+    .l10 {
+        flex-basis: 83.33333333%;
+        max-width: 83.33333333%;
+    }
+
+    .l11 {
+        flex-basis: 91.66666667%;
+        max-width: 91.66666667%;
+    }
+
+    .l12 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    .l0-offset {
+        margin-left: 0;
+    }
+
+    .l1-offset {
+        margin-left: 8.33333333%;
+    }
+
+    .l2-offset {
+        margin-left: 16.66666667%;
+    }
+
+    .l3-offset {
+        margin-left: 25%;
+    }
+
+    .l4-offset {
+        margin-left: 33.33333333%;
+    }
+
+    .l5-offset {
+        margin-left: 41.66666667%;
+    }
+
+    .l6-offset {
+        margin-left: 50%;
+    }
+
+    .l7-offset {
+        margin-left: 58.33333333%;
+    }
+
+    .l8-offset {
+        margin-left: 66.66666667%;
+    }
+
+    .l9-offset {
+        margin-left: 75%;
+    }
+
+    .l10-offset {
+        margin-left: 83.33333333%;
+    }
+
+    .l11-offset {
+        margin-left: 91.66666667%;
+    }
+
+    .l-start {
+        justify-content: flex-start;
+        text-align: start;
+    }
+
+    .l-center {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .l-end {
+        justify-content: flex-end;
+        text-align: end;
+    }
+
+    .l-top {
+        align-items: flex-start;
+    }
+
+    .l-middle {
+        align-items: center;
+    }
+
+    .l-bottom {
+        align-items: flex-end;
+    }
+
+    .l-around {
+        justify-content: space-around;
+    }
+
+    .l-between {
+        justify-content: space-between;
+    }
+
+    .l-first {
+        order: -1;
+    }
+
+    .l-last {
+        order: 1;
+    }
+}

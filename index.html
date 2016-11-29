@@ -6,7 +6,8 @@
         <title>William McCall</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/skeleton.css">
+        <link rel="stylesheet" href="css/grid.css">
+        <link rel="stylesheet" href="css/shadow.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/typo.css">
         <link rel="stylesheet" href="css/header.css">
@@ -23,43 +24,43 @@
             <a href="#">Home</a>
             <a href="#">About Me</a>
             <a href="https://github.com/yajaru">Github</a>
-            <a href="#">More Stuff</a>
         </nav>
 
 
-        <main class="container"><div class="row">
-            <header class="twelve columns">
+        <main class="fluid shdw-1">
+            <header>
                 <h1 class="center"></h1>
                 <h5 class="center"></h5>
-                <!-- <img src="img/profile.jpg"></img> -->
             </header>
 
-            <section class="four columns">
-                <a href="#"><article>
-                    <img src="img/profile.jpg"></img>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper ligula sit amet augue lacinia, et volutpat velit semper.</p>
-                </article></a>
+            <section>
+                <article class="col s">
+                    <a href="#"><section class="shdw-hoverable">
+                        <img class="col s12 m6 l3 no-margin" src="img/face.jpg"></img>
+                        <p class="col s12 m6 l9 no-margin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper ligula sit amet augue lacinia, et volutpat velit semper.</p>
+                    </section></a>
+                </article>
             </section>
-            <section class="four columns">
-                <a href="#"><article>
+
+            <section>
+                <a class="col s12 m6 l4" href="https://yajaru.github.io/Color-Square/"><article class="shdw-hoverable">
+                    <img src="img/color-square.png"></img>
+                    <p>Color Square is a little puzzle game that I made where the goal is to fill a grid with colors based on a rule.</p>
+                </article></a>
+                <a class="col s12 m6 l4" href="#"><article class="shdw-hoverable">
                     <img src="img/face.jpg"></img>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper ligula sit amet augue lacinia, et volutpat velit semper.</p>
                 </article></a>
-            </section>
-            <section class="four columns">
-                <a href="#"><article>
+                <a class="col s12 m6 l4" href="#"><article class="shdw-hoverable">
                     <img src="img/space.jpg"></img>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper ligula sit amet augue lacinia, et volutpat velit semper.</p>
                 </article></a>
             </section>
-        </div></main>
-        <footer class="container row">
-            <section class="six columns">
-                <p>Made By William McCall</p>
-            </section>
-            <section class="six columns">
-                <a href="mailto:mccallwi01@gmail.com" target="_top">&#64; Email Me</p>
-            </section>
-        </footer>
+            <footer>
+                <p class="col s m6">Made By William McCall</p>
+                <a class="col s m6" href="mailto:mccallwi01@gmail.com" target="_top">&#64; Email Me</p>
+            </footer>
+        </main>
+
     </body>
 </html>

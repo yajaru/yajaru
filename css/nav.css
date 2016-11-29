@@ -21,7 +21,7 @@ label[for="drawer-toggle"] {
     z-index: 2;
     width: 56px;
     height: 56px;
-    padding: 2px 13px;
+    padding: 5px 14px;
     font-size: 32px;
     background-color: salmon;
     color: white;
